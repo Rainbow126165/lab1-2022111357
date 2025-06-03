@@ -1,4 +1,4 @@
-
+package src;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
@@ -45,7 +45,7 @@ import org.apache.commons.io.FilenameUtils;
  */
 public class Main {
 
-  private static Map<String, Map<String, Integer>> graph;
+  public static Map<String, Map<String, Integer>> graph;
   private static final double DAMPING_FACTOR = 0.85;
   private static final int PAGERANK_ITERATIONS = 200;
   private static volatile boolean stopWalk = false; // 用于控制随机游走的标志变量
